@@ -40,19 +40,19 @@ def win_check(board,mark):
     #the purpose of this is to determine a winner
     # to see if any player gets 3 in a row
     return ((board[1] == mark and board[2] == mark and board [3] == mark)
-# at the top row
+    # at the top row
 or (board[4] == mark and board[5] == mark and board[6] == mark)
-#for the middle row
+    #for the middle row
 or (board[7] == mark and board[8] == mark and board[9]== mark)
-#for the bottom row
+    #for the bottom row
 or (board[7] == mark and board[5]== mark and board[3]== mark)
-#diagonal row
+    #diagonal row
 or (board[9]== mark and board[5]== mark and board[1]== mark)
- #for the other diagonal row
+    #for the other diagonal row
 or (board[9] == mark and board[6]== mark and board [3]==mark)
-#for right vertical row
+    #for right vertical row
 or (board[7] == mark and board[4] == mark and board[1] == mark))
-#for the left vertical row
+    #for the left vertical row
 
 #step 5
 import random
@@ -95,19 +95,17 @@ def player_choice(board):
         # make input integer for position
         position = int(input('Choose your next position: (1 - 9)'))
     return position
-# Step9
-# ask if players wanna play a game
 
 
 #Step9
-# ask if players wanna play a game
+    # ask if players wanna play a game
 def replay():
     return input(' Do you wanna run it again? Enter Yes or No').lower().startswith('y')
 
 
 # Step 10
-# now use while loops to tun the game and
-# return commands to the players
+    # now use while loops to tun the game and
+    # return commands to the players
 print('Tic tac toe..... The GAME')
 
 while True:
